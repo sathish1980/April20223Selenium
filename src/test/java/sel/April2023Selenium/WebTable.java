@@ -11,12 +11,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WebTable {
 	
 	WebDriver driver;
-	public void webtableImplementation(String expectedCountryName)
+	public void webtableImplementation(String expectedCountryName) throws InterruptedException
 	{
 		driver = new ChromeDriver();
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		driver.manage().window().maximize();
 		driver.get("https://leafground.com/table.xhtml");
+		List<WebElement> pagination = driver.findElements(By.xpath("//*[@class='ui-paginator-pages']//a"));
+		for(int j=1;j<=pagination.size();j++)
+		{
+		WebElement eachElement = driver.findElement(By.xpath("//*[@class='ui-paginator-pages']//a["+j+"]"));
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		eachElement.click();
+		Thread.sleep(2000);
 		List<WebElement> allRows = driver.findElements(By.xpath("//*[@id='form:j_idt89_data']//tr"));
 		for(int i=1;i<allRows.size();i++)
 		{
@@ -30,9 +37,10 @@ public class WebTable {
 				System.out.println(name + " "+Representative+" "+date);
 			 }
 		}
+		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebTable wt = new WebTable();
 		wt.webtableImplementation("France");
