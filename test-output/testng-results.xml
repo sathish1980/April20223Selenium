@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="44" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="44" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+      <class name="TestNgBasics.TestNgSecondClass">
+        <test-method status="PASS" signature="BeforeSutie()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="BeforeSutie" is-config="true" duration-ms="7" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSutie -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="Testcase3inanothercalss()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="Testcase3inanothercalss" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase3inanothercalss -->
+        <test-method status="PASS" signature="AfterSutie()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="AfterSutie" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSutie -->
+      </class> <!-- TestNgBasics.TestNgSecondClass -->
+      <class name="TestNgBasics.TestNgfirstClass">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="BeforeClass" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="Testcase1()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="Testcase1" duration-ms="5" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="Testcase2()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="Testcase2" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase2 -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterMethod" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterClass" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterTest" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- TestNgBasics.TestNgfirstClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
