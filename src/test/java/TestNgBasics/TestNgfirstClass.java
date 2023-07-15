@@ -36,16 +36,18 @@ public void AfterMethod()
 	System.out.println("@AfterMethod");
 }
 
-@Test
+@Test(priority=1,dependsOnMethods="Testcase1")
 public void Testcase2()
 {
 	System.out.println("Testcase2");
 }
 
-@Test
-public void Testcase1()
+@Test(priority=0,timeOut=1)
+public void Testcase1() throws InterruptedException
 {
 	System.out.println("Testcase1");
+	Thread.sleep(50000);
+	//throw new ArithmeticException("Exception raised");
 }
 
 }

@@ -1,67 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+  <suite name="Default suite" duration-ms="19207" started-at="2023-07-15T09:26:07 IST" finished-at="2023-07-15T09:26:26 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="44" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-      <class name="TestNgBasics.TestNgSecondClass">
-        <test-method status="PASS" signature="BeforeSutie()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="BeforeSutie" is-config="true" duration-ms="7" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+    <test name="Default test" duration-ms="19207" started-at="2023-07-15T09:26:07 IST" finished-at="2023-07-15T09:26:26 IST">
+      <class name="TestCase.MakeMytripSearch">
+        <test-method status="PASS" signature="BrowserStart()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="BrowserStart" is-config="true" duration-ms="2964" started-at="2023-07-15T09:26:04 IST" finished-at="2023-07-15T09:26:07 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeSutie -->
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="BeforeTest" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+        </test-method> <!-- BrowserStart -->
+        <test-method status="PASS" signature="EnterUrl()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="EnterUrl" is-config="true" duration-ms="2477" started-at="2023-07-15T09:26:07 IST" finished-at="2023-07-15T09:26:10 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="Testcase3inanothercalss()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="Testcase3inanothercalss" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+        </test-method> <!-- EnterUrl -->
+        <test-method status="PASS" signature="ClearPopup()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="ClearPopup" is-config="true" duration-ms="5008" started-at="2023-07-15T09:26:10 IST" finished-at="2023-07-15T09:26:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase3inanothercalss -->
-        <test-method status="PASS" signature="AfterSutie()[pri:0, instance:TestNgBasics.TestNgSecondClass@544a2ea6]" name="AfterSutie" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+        </test-method> <!-- ClearPopup -->
+        <test-method status="PASS" signature="ValidFlightSearch()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="ValidFlightSearch" duration-ms="8284" started-at="2023-07-15T09:26:15 IST" finished-at="2023-07-15T09:26:23 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterSutie -->
-      </class> <!-- TestNgBasics.TestNgSecondClass -->
-      <class name="TestNgBasics.TestNgfirstClass">
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="BeforeClass" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
+        </test-method> <!-- ValidFlightSearch -->
+        <test-method status="PASS" signature="InValidFromAndToSearch()[pri:1, instance:TestCase.MakeMytripSearch@1990a65e]" name="InValidFromAndToSearch" duration-ms="3394" started-at="2023-07-15T09:26:23 IST" finished-at="2023-07-15T09:26:26 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="Testcase1()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="Testcase1" duration-ms="5" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase1 -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="Testcase2()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="Testcase2" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase2 -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterMethod" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="AfterClass()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterClass" is-config="true" duration-ms="0" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterClass -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:TestNgBasics.TestNgfirstClass@3891771e]" name="AfterTest" is-config="true" duration-ms="1" started-at="2023-07-08T09:54:41 IST" finished-at="2023-07-08T09:54:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- TestNgBasics.TestNgfirstClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- InValidFromAndToSearch -->
+      </class> <!-- TestCase.MakeMytripSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
