@@ -1,33 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19207" started-at="2023-07-15T09:26:07 IST" finished-at="2023-07-15T09:26:26 IST">
+  <suite name="Suite" duration-ms="55537" started-at="2023-07-22T09:01:40 IST" finished-at="2023-07-22T09:02:35 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19207" started-at="2023-07-15T09:26:07 IST" finished-at="2023-07-15T09:26:26 IST">
+    <test name="Test" duration-ms="55537" started-at="2023-07-22T09:01:40 IST" finished-at="2023-07-22T09:02:35 IST">
       <class name="TestCase.MakeMytripSearch">
-        <test-method status="PASS" signature="BrowserStart()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="BrowserStart" is-config="true" duration-ms="2964" started-at="2023-07-15T09:26:04 IST" finished-at="2023-07-15T09:26:07 IST">
+        <test-method status="PASS" signature="BrowserStart()[pri:0, instance:TestCase.MakeMytripSearch@64485a47]" name="BrowserStart" is-config="true" duration-ms="3360" started-at="2023-07-22T09:01:36 IST" finished-at="2023-07-22T09:01:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserStart -->
-        <test-method status="PASS" signature="EnterUrl()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="EnterUrl" is-config="true" duration-ms="2477" started-at="2023-07-15T09:26:07 IST" finished-at="2023-07-15T09:26:10 IST">
+        <test-method status="PASS" signature="EnterUrl()[pri:0, instance:TestCase.MakeMytripSearch@64485a47]" name="EnterUrl" is-config="true" duration-ms="3946" started-at="2023-07-22T09:01:40 IST" finished-at="2023-07-22T09:01:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterUrl -->
-        <test-method status="PASS" signature="ClearPopup()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="ClearPopup" is-config="true" duration-ms="5008" started-at="2023-07-15T09:26:10 IST" finished-at="2023-07-15T09:26:15 IST">
+        <test-method status="PASS" signature="ClearPopup()[pri:0, instance:TestCase.MakeMytripSearch@64485a47]" name="ClearPopup" is-config="true" duration-ms="11339" started-at="2023-07-22T09:01:44 IST" finished-at="2023-07-22T09:01:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClearPopup -->
-        <test-method status="PASS" signature="ValidFlightSearch()[pri:0, instance:TestCase.MakeMytripSearch@1990a65e]" name="ValidFlightSearch" duration-ms="8284" started-at="2023-07-15T09:26:15 IST" finished-at="2023-07-15T09:26:23 IST">
+        <test-method status="PASS" signature="ValidFlightSearch(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.MakeMytripSearch@64485a47]" name="ValidFlightSearch" duration-ms="8971" started-at="2023-07-22T09:01:55 IST" data-provider="ReadSearchData" finished-at="2023-07-22T09:02:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PNQ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidFlightSearch -->
-        <test-method status="PASS" signature="InValidFromAndToSearch()[pri:1, instance:TestCase.MakeMytripSearch@1990a65e]" name="InValidFromAndToSearch" duration-ms="3394" started-at="2023-07-15T09:26:23 IST" finished-at="2023-07-15T09:26:26 IST">
+        <test-method status="PASS" signature="ValidFlightSearch(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.MakeMytripSearch@64485a47]" name="ValidFlightSearch" duration-ms="14217" started-at="2023-07-22T09:02:04 IST" data-provider="ReadSearchData" finished-at="2023-07-22T09:02:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BLR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BOM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidFlightSearch -->
+        <test-method status="PASS" signature="ValidFlightSearch(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCase.MakeMytripSearch@64485a47]" name="ValidFlightSearch" duration-ms="12016" started-at="2023-07-22T09:02:19 IST" data-provider="ReadSearchData" finished-at="2023-07-22T09:02:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BLR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidFlightSearch -->
+        <test-method status="PASS" signature="InValidFromAndToSearch(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:TestCase.MakeMytripSearch@64485a47]" name="InValidFromAndToSearch" duration-ms="2373" started-at="2023-07-22T09:02:31 IST" data-provider="InvalidReadSearchData" finished-at="2023-07-22T09:02:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidFromAndToSearch -->
+        <test-method status="PASS" signature="InValidFromAndToSearch(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:TestCase.MakeMytripSearch@64485a47]" name="InValidFromAndToSearch" duration-ms="1117" started-at="2023-07-22T09:02:33 IST" data-provider="InvalidReadSearchData" finished-at="2023-07-22T09:02:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BLR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BLR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidFromAndToSearch -->
+        <test-method status="PASS" signature="InValidFromAndToSearch(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:TestCase.MakeMytripSearch@64485a47]" name="InValidFromAndToSearch" duration-ms="1201" started-at="2023-07-22T09:02:34 IST" data-provider="InvalidReadSearchData" finished-at="2023-07-22T09:02:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DEL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DEL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidFromAndToSearch -->
       </class> <!-- TestCase.MakeMytripSearch -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

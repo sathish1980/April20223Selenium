@@ -8,14 +8,19 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 public class CommonWebElements {
+	
 	public void ClickOnBrowserBackButton(WebDriver driver)
 	{
 		driver.navigate().back();
@@ -152,5 +157,24 @@ public class CommonWebElements {
 		}
 		
 		return Destinationfile.toString();
+	}
+	
+	public void FluentWait(WebDriver driver)
+	{
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+	            .withTimeout(Duration.ofSeconds(60))
+	            .pollingEvery(Duration.ofSeconds(5))
+	            .ignoring(NoSuchElementException.class)
+	            .ignoring(TimeoutException.class);
+	}
+	
+	public void ClickOnLogin(WebDriver driver)
+	{
+		driver.findElement(By.xpath("(//*[@data-cy='account'])[1]"));
+	}
+	
+	public void BrowserRefresh(WebDriver driver)
+	{
+		driver.navigate().refresh();
 	}
 }

@@ -3,37 +3,58 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import Commons.CommonWebElements;
 
 public class SearchPage extends CommonWebElements {
 	WebDriver driver;
+	@FindBy (xpath="//*[@for='fromCity']")
+	WebElement fromButton;
+	@FindBy (xpath="//input[@id='fromCity']")
+	WebElement FromGetAttribute;
+	@FindBy (xpath="//*[@for='toCity']")
+	WebElement toButton;
+	@FindBy (xpath = "//input[@id='toCity']")
+	WebElement ToGetAttribute;
+	@FindBy (xpath ="//*[@data-cy='submit']//a")
+	WebElement submitButton;
+	@FindBy (xpath ="//*[@data-cy='sameCityError']")
+	WebElement GetErrorMessage;
+	
+	By fromElement = By.xpath("//*[@for='fromCity']");
+	By fromList = By.xpath("//ul[@role='listbox']//li");
+	By fromListFirstValue = By.xpath("(//ul[@role='listbox']//li)[1]");
+	By errorElement = By.xpath("//*[@data-cy='sameCityError']");
 	
 	public SearchPage(WebDriver driver)
 	{
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public String ClickAndSelectFromValue(String fromValue)
 	 {
-		WaitForElementToBeClickable(driver, By.xpath("//*[@for='fromCity']"), 60);
-		WebElement fromButton = driver.findElement(By.xpath("//*[@for='fromCity']"));
-		ClickOnButton(driver.findElement(By.xpath("//*[@for='fromCity']")));
+		//FluentWait(driver);
+		WaitForElementToBeClickable(driver,fromElement , 60);
+		//WebElement fromButton = driver.findElement(By.xpath("//*[@for='fromCity']"));
+		ClickOnButton(fromButton);
 			
-			WaitForElementToBeVisible(driver,By.xpath("(//ul[@role='listbox']//li)[1]"),60);
-			SelectTheValueFromList(driver, By.xpath("//ul[@role='listbox']//li"),fromValue);
-			String FromCityName=GetAttributeOfelement(driver.findElement(By.xpath("//input[@id='fromCity']")),"value");
+			WaitForElementToBeVisible(driver,fromListFirstValue,60);
+			SelectTheValueFromList(driver, fromList,fromValue);
+			String FromCityName=GetAttributeOfelement(FromGetAttribute,"value");
 			return FromCityName;
 	}
 	
 	public String ClickAndSelectToValue(String fromValue)
 	 {
-		WebElement fromButton = driver.findElement(By.xpath("//*[@for='toCity']"));
-		ClickOnButton(driver.findElement(By.xpath("//*[@for='toCity']")));
+		//WebElement toButton = driver.findElement(By.xpath("//*[@for='toCity']"));
+		ClickOnButton(toButton);
 			
-		WaitForElementToBeVisible(driver,By.xpath("(//ul[@role='listbox']//li)[1]"),60);
-		SelectTheValueFromList(driver, By.xpath("//ul[@role='listbox']//li"),fromValue);
-			String FromCityName=GetAttributeOfelement(driver.findElement(By.xpath("//input[@id='toCity']")),"value");
+		WaitForElementToBeVisible(driver,fromListFirstValue,60);
+		SelectTheValueFromList(driver,fromList,fromValue);
+			String FromCityName=GetAttributeOfelement(ToGetAttribute,"value");
 			return FromCityName;
 	}
 
@@ -45,14 +66,14 @@ public class SearchPage extends CommonWebElements {
 	
 	public void ClickOnSearch()
 	{
-		clickOnButton(driver.findElement(By.xpath("//*[@data-cy='submit']//a")));
+		clickOnButton(submitButton);
 	  	
 	}
 	
 	public String GetErrorMessage()
 	{
-		WaitForElementToBeVisible(driver, By.xpath("//*[@data-cy='sameCityError']"), 60);
-		return GetTextOfelement(driver.findElement(By.xpath("//*[@data-cy='sameCityError']")));
+		WaitForElementToBeVisible(driver,errorElement , 60);
+		return GetTextOfelement(GetErrorMessage);
 	}
 	
 

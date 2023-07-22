@@ -9,7 +9,6 @@
           <include name="EnterUrl"/>
           <include name="ClearPopup"/>
           <include name="InValidFromAndToSearch"/>
-          <include name="ValidFlightSearch"/>
         </methods>
       </class> <!-- TestCase.MakeMytripSearch -->
     </classes>
